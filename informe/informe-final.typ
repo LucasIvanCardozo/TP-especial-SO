@@ -4,9 +4,8 @@
 // ============================================
 
 // Preámbulo
-#let font-body = "Times New Roman"
-#let font-sans = "Arial"
-#let font-mono = "Courier New"
+#let font-body = "Liberation Serif"
+#let font-sans = "Liberation Sans"
 
 // Colores
 #let header-bg = rgb(30, 80, 140)
