@@ -68,12 +68,6 @@
   }
 }
 
-// Helper para fill simple (caratula)
-#let simple-fill(col) = {
-  if col == 0 { rgb(230, 230, 230) }
-  else { white }
-}
-
 // Reglas para evitar huérfanos: que títulos no queden solos al final de página
 // Esto previene que un subtítulo (===) quede solo al final de página
 
@@ -88,60 +82,41 @@
 // ============================================
 
 #align(center)[
-  #v(1cm)
-  #text(font: font-sans, size: 14pt, weight: "bold")[
-    FUNDAMENTOS DE SISTEMAS OPERATIVOS / SISTEMAS OPERATIVOS 2026
-  ]
-  #v(0.5cm)
+  #v(1.5cm)
   #text(font: font-sans, size: 12pt, weight: "bold")[
+    FUNDAMENTOS DE SISTEMAS OPERATIVOS 2026
+  ]
+  #v(0.3cm)
+  #text(font: font-sans, size: 11pt, weight: "bold")[
     FACULTAD DE INGENIERÍA — UNIVERSIDAD NACIONAL DE MAR DEL PLATA
   ]
   #v(1.5cm)
-  #text(font: font-sans, size: 18pt, weight: "bold", fill: header-bg)[
+  #text(font: font-sans, size: 20pt, weight: "bold", fill: header-bg)[
     Trabajo Práctico Especial
   ]
   #text(font: font-sans, size: 16pt, weight: "regular")[
-    #linebreak()
     Evaluación de Productos
   ]
   #v(1cm)
-  #text(font: font-sans, size: 20pt, weight: "bold", fill: header-bg)[
+  #text(font: font-sans, size: 22pt, weight: "bold", fill: header-bg)[
     Zephyr OS vs MOSIX
   ]
-  #v(1.5cm)
-]
-
-#align(center)[
-  #table(
-    columns: (auto, auto),
-    stroke: none,
-    align: (left, left),
-    inset: (x: 0.3cm, y: 0.15cm),
-    text(font: font-sans, size: 11pt)[
-      *Fecha:* ], text(font: font-sans, size: 11pt)[3 de Junio de 2026 — 13:30 hs],
-      text(font: font-sans, size: 11pt)[*Hora:* ], text(font: font-sans, size: 11pt)[13:30 hs],
-    ),
-    fill: simple-fill,
-  )
-]
-
-#v(1cm)
-
-#align(center)[
-  #text(font: font-sans, size: 11pt, weight: "bold")[Integrantes:]
-  #v(0.3cm)
-  #text(font: font-sans, size: 11pt)[
-    ARRIAGA, Mario Esteban \
-    BELLONE, Martín \
-    BISCAY, Federico Javier \
-    CALLA ALIENDE, Federico \
-    CARDOZO, Lucas
+  #v(2cm)
+  #box(stroke: 1pt, inset: 0.5cm)[
+    #text(font: font-sans, size: 11pt, weight: "bold")[Integrantes:]
+    #v(0.2cm)
+    #text(font: font-sans, size: 11pt)[
+      ARRIAGA, Mario Esteban 
+      BELLONE, Martín 
+      BISCAY, Federico Javier 
+      CALLA ALIENDE, Federico 
+      CARDOZO, Lucas
+    ]
+    #v(0.5cm)
+    #text(font: font-sans, size: 11pt)[Fecha de presentación: 3 de Junio de 2026 — 13:30 hs]
   ]
-]
-
-#v(2cm)
-#align(center)[
-  #text(font: font-sans, size: 10pt, fill: gray)[
+  #v(2cm)
+  #text(font: font-sans, size: 9pt, fill: gray)[
     Documento elaborado para el Trabajo Práctico Especial de Fundamentos de Sistemas Operativos
     #linebreak()
     Universidad Nacional de Mar del Plata — Mayo 2026
