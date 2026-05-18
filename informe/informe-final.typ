@@ -60,8 +60,11 @@
 #let table-fill(row, col) = {
   if row == 0 { header-bg }
   else {
-    if calc.even(row) { alt-row }
-    else { white }
+    if col == 0 { rgb(220, 220, 220) }  // Primera columna más oscura para texto blanco
+    else {
+      if calc.even(row) { alt-row }
+      else { white }
+    }
   }
 }
 
@@ -69,6 +72,15 @@
 #let simple-fill(col) = {
   if col == 0 { rgb(230, 230, 230) }
   else { white }
+}
+
+// Reglas para evitar huérfanos: que títulos no queden solos al final de página
+// Esto previene que un subtítulo (===) quede solo al final de página
+
+// Primera columna de tablas con texto blanco y alineamiento izquierda
+#show table.cell.where(x: 0): it => {
+  set text(fill: white)
+  it
 }
 
 // ============================================
@@ -194,6 +206,7 @@ El objetivo es presentar un análisis técnico objetivo que permita comprender l
 
 #strong("Modelo:") Propietario restrictivo (prohíbe modificación, ingeniería reversa, obras derivadas). No es open source.
 
+#pagebreak(weak: true)
 == Síntesis
 
 #table(
@@ -302,6 +315,7 @@ No soporta symbolic/hard links. Modelo de permisos inexistente (similar a DOS).
 
 #strong("Limitaciones:") No soporta memoria compartida (ni POSIX shm_open ni System V shmget/shmat). Sin DSM. Procesos gigabytes toman minutos en migrar. debe evaluar si costo de migración supera beneficio.
 
+#pagebreak(weak: true)
 == Comparación
 
 #table(
@@ -355,6 +369,7 @@ No soporta symbolic/hard links. Modelo de permisos inexistente (similar a DOS).
 
 #strong("Limitaciones:") No soporta memoria compartida ni threads POSIX. Procesos grandes generan tráfico significativo.
 
+#pagebreak(weak: true)
 == Comparación
 
 #table(
