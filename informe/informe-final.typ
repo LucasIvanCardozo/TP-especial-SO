@@ -543,11 +543,13 @@ No soporta symbolic/hard links. Modelo de permisos inexistente (similar a DOS).
   text(font: font-sans, size: 10pt, fill: white, weight: "bold")[MOSIX],
   [Licencia], [Apache 2.0 (permisiva)], [Propietaria restrictiva],
   [Código fuente], [Completo en GitHub], [No disponible],
-  [Costo de entrada], [Cero], [Histórico: ~61,141 USD (año 2000)],
+  [Costo de entrada], [Cero], [Gratuito (uso académico)],
+  [Precio comercial], [--], [Sin documentación pública],
   [Costo por unidad], [Cero sin regalías], [Desconocido (inactivo)],
   [Soporte comercial], [Opt-in via miembros, Wind River Rocket], [No disponible],
   [Viabilidad 2026], [[OK] Activo con sponsors múltiples], [[NO] Inactivo desde 2017],
 )
+
 
 // ============================================
 // 10. COMPARATIVA TÉCNICA

@@ -15,12 +15,14 @@ MOSIX es desarrollado y mantenido por el **Grupo de Investigación en Sistemas D
 El fundador y líder del proyecto es el **Prof. Amnon Barak**, profesor del Instituto de Ciencia de la Computación de la Hebrew University of Jerusalem.
 
 **Trayectoria académica relevante:**
+
 - Ha publicado más de **71 trabajos de investigación** con aproximadamente **1,662 citas** ([ResearchGate](https://www.researchgate.net/scientific-contributions/Amnon-Barak-8110256))
 - Áreas de investigación: sistemas paralelos y distribuidos, algoritmos para gestión adaptativa de recursos en clouds, sistemas distribuidos de alto rendimiento
 - En 1986 fue appointed como el primer Director del **German-Israeli Foundation (GIF)** para la cooperación científica bilateral ([GIF](https://www.gif.org.il/2022/07/19/gif-remembers-its-first-director-dr-amnon-barak/))
 - Entre sus proyectos destacados se encuentran: FFMK (Fast and Fault-Tolerant Microkernel-Based System for Exascale Computing)
 
 **Perfil académico:**
+
 - [Perfil oficial en HUJI](https://www.cs.huji.ac.il/~amnon)
 - [DBLP - Registro de publicaciones](https://dblp.org/pid/b/AmnonBarak)
 
@@ -45,19 +47,19 @@ El fundador y líder del proyecto es el **Prof. Amnon Barak**, profesor del Inst
 
 MOSIX tiene una de las historias más largas en computación distribuida, con desarrollo continuo desde 1977 hasta aproximadamente 2017:
 
-| Período | Versión | Plataforma | Detalles |
-|---------|---------|------------|----------|
-| **1977–1979** | MOS (Version 0) | PDP-11/45 + PDP-11/10 (Unix v6) | Primer proyecto de migración de procesos. Demostró ganancias de rendimiento incluso con enlaces de comunicación lentos. |
-| **1981–1983** | MOS (Version 1) | PDP-11/45 + 4 PDP-11/23 (Unix v7) | Primer sistema operativo multicomputadora funcional. |
-| **1987–1988** | NSMOS | NS32332 | Puerto a arquitectura National Semiconductor 32000. |
-| **1988–1989** | MOSIX | NS32532 cluster (16 nodos) | Primer sistema con el nombre "MOSIX". |
-| **1991–1993** | MOSIX v6 | BSD/OS (cluster de 486/Pentium) | Cluster con 8 equipos 486 y 32 Pentium PCs conectados por Myrinet. |
-| **1998–1999** | MOSIX v7 | Linux 2.2 | Primera versión para Linux. Cluster de 64 nodos x86 con Myrinet. |
-| **1999** | MOSIX se enfoca en Linux | Linux | A partir de aquí, todas las versiones se desarrollan sobre kernel Linux. |
-| **2003** | MOSIX v9 | Linux 2.4/2.6 | Cluster con cientos de estaciones de trabajo. |
-| **2004–2006** | MOSIX v10 (MOSIX-2) | Linux 2.6 | Gestión de multiclusters y grids. |
-| **2014** | MOSIX-4 | Linux 3.X/4.X | **Ya no requiere parche de kernel.** |
-| **24 de octubre de 2017** | MOSIX-4.4.4 | Linux 3.X/4.X | **Último release oficial hasta la fecha.** |
+| Período                   | Versión                  | Plataforma                        | Detalles                                                                                                                |
+| ------------------------- | ------------------------ | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **1977–1979**             | MOS (Version 0)          | PDP-11/45 + PDP-11/10 (Unix v6)   | Primer proyecto de migración de procesos. Demostró ganancias de rendimiento incluso con enlaces de comunicación lentos. |
+| **1981–1983**             | MOS (Version 1)          | PDP-11/45 + 4 PDP-11/23 (Unix v7) | Primer sistema operativo multicomputadora funcional.                                                                    |
+| **1987–1988**             | NSMOS                    | NS32332                           | Puerto a arquitectura National Semiconductor 32000.                                                                     |
+| **1988–1989**             | MOSIX                    | NS32532 cluster (16 nodos)        | Primer sistema con el nombre "MOSIX".                                                                                   |
+| **1991–1993**             | MOSIX v6                 | BSD/OS (cluster de 486/Pentium)   | Cluster con 8 equipos 486 y 32 Pentium PCs conectados por Myrinet.                                                      |
+| **1998–1999**             | MOSIX v7                 | Linux 2.2                         | Primera versión para Linux. Cluster de 64 nodos x86 con Myrinet.                                                        |
+| **1999**                  | MOSIX se enfoca en Linux | Linux                             | A partir de aquí, todas las versiones se desarrollan sobre kernel Linux.                                                |
+| **2003**                  | MOSIX v9                 | Linux 2.4/2.6                     | Cluster con cientos de estaciones de trabajo.                                                                           |
+| **2004–2006**             | MOSIX v10 (MOSIX-2)      | Linux 2.6                         | Gestión de multiclusters y grids.                                                                                       |
+| **2014**                  | MOSIX-4                  | Linux 3.X/4.X                     | **Ya no requiere parche de kernel.**                                                                                    |
+| **24 de octubre de 2017** | MOSIX-4.4.4              | Linux 3.X/4.X                     | **Último release oficial hasta la fecha.**                                                                              |
 
 ### Hitos Importantes
 
@@ -71,12 +73,14 @@ MOSIX tiene una de las historias más largas en computación distribuida, con de
 ### Trayectoria Investigadora
 
 El proyecto ha evolucionado a lo largo de décadas manteniendo su enfoque en:
+
 - Migración preemptiva de procesos
 - Balanceo de carga automático
 - Single System Image (SSI)
 - Gestión de múltiples clusters y grids
 
 **Fuentes:**
+
 - [History of MOSIX - Hebrew University](https://mosix.cs.huji.ac.il/txt_history.html)
 - [Wikipedia: MOSIX](https://en.wikipedia.org/wiki/MOSIX)
 
@@ -92,9 +96,10 @@ MOSIX es **software propietario** distribuido bajo una **licencia restrictiva pr
 
 Según el texto oficial de la licencia publicado en el sitio de MOSIX:
 
-> *"The following license applies to most parts of the MOSIX package... MOSIX SOFTWARE LICENSE AGREEMENT... You are not allowed to modify or reverse-engineer THE PRODUCT."*
+> _"The following license applies to most parts of the MOSIX package... MOSIX SOFTWARE LICENSE AGREEMENT... You are not allowed to modify or reverse-engineer THE PRODUCT."_
 
 **Características clave de la licencia:**
+
 - ✅ Uso permitido bajo los términos de la licencia
 - ❌ **Prohibido:** modificar el software
 - ❌ **Prohibido:** realizar ingeniería reversa
@@ -111,19 +116,20 @@ Según el texto oficial de la licencia publicado en el sitio de MOSIX:
 
 ### Comparación con Licencias Open Source
 
-| Aspecto | MOSIX | GPL (openMosix original) | Apache 2.0 (Kubernetes) |
-|---------|-------|---------------------------|------------------------|
-| Código fuente disponible | ❌ No | ✅ Sí | ✅ Sí |
-| Permiso para modificar | ❌ No | ✅ Sí | ✅ Sí |
-| Permiso para crear derivados | ❌ No | ✅ Sí | ✅ Sí |
-| Requisito de código abierto | ❌ No | ✅ Sí | ✅ Sí |
-| Uso comercial | Restringido | ✅ Sí | ✅ Sí |
+| Aspecto                      | MOSIX       | GPL (openMosix original) | Apache 2.0 (Kubernetes) |
+| ---------------------------- | ----------- | ------------------------ | ----------------------- |
+| Código fuente disponible     | ❌ No       | ✅ Sí                    | ✅ Sí                   |
+| Permiso para modificar       | ❌ No       | ✅ Sí                    | ✅ Sí                   |
+| Permiso para crear derivados | ❌ No       | ✅ Sí                    | ✅ Sí                   |
+| Requisito de código abierto  | ❌ No       | ✅ Sí                    | ✅ Sí                   |
+| Uso comercial                | Restringido | ✅ Sí                    | ✅ Sí                   |
 
 ### Estado de la Licencia en 2026
 
 **Información no disponible públicamente** sobre cambios recientes a la política de licenciamiento. La última documentación visible data de 2017.
 
 **Fuentes:**
+
 - [MOSIX Distributions - Licensing](https://mosix.cs.huji.ac.il/txt_distributions.html)
 - [Wikipedia: MOSIX](https://en.wikipedia.org/wiki/MOSIX)
 
@@ -137,14 +143,14 @@ En **2001**, cuando el equipo de MOSIX decidió volver el software propietario (
 
 ### Cronología de openMosix
 
-| Fecha | Evento |
-|-------|--------|
-| **2001** | MOSIX se vuelve propietario |
-| **Febrero 2002** | Lanzamiento oficial de openMosix |
-| **2002–2007** | Período activo de desarrollo |
+| Fecha                   | Evento                                                                                                                        |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **2001**                | MOSIX se vuelve propietario                                                                                                   |
+| **Febrero 2002**        | Lanzamiento oficial de openMosix                                                                                              |
+| **2002–2007**           | Período activo de desarrollo                                                                                                  |
 | **17 de julio de 2007** | Anuncio oficial de discontinuación ([Slashdot](https://linux.slashdot.org/story/07/07/17/2342252/openmosix-is-shutting-down)) |
-| **Marzo 2008** | Cierre oficial del proyecto |
-| **Post-2008** | **LinuxPMI** continúa el desarrollo del código de openMosix |
+| **Marzo 2008**          | Cierre oficial del proyecto                                                                                                   |
+| **Post-2008**           | **LinuxPMI** continúa el desarrollo del código de openMosix                                                                   |
 
 ### Características de openMosix
 
@@ -157,20 +163,21 @@ En **2001**, cuando el equipo de MOSIX decidió volver el software propietario (
 
 Después del cierre de openMosix, el proyecto **LinuxPMI** continuó desarrollando el código heredado. Sin embargo, según publicaciones recientes en foros especializados, **LinuxPMI también está discontinuado** a fecha de 2025.
 
-> *"OpenMosix, OpenSSI, Kerrighed, LinuxPMI all seem to be dead, and i figured the original Mosix Project (which went closed source years ago)..."* — Comentario en Facebook, febrero 2025
+> _"OpenMosix, OpenSSI, Kerrighed, LinuxPMI all seem to be dead, and i figured the original Mosix Project (which went closed source years ago)..."_ — Comentario en Facebook, febrero 2025
 
 ### Tabla Comparativa: MOSIX vs openMosix
 
-| Aspecto | MOSIX | openMosix |
-|---------|-------|-----------|
-| **Licencia** | Propietaria | GPL |
+| Aspecto                    | MOSIX              | openMosix        |
+| -------------------------- | ------------------ | ---------------- |
+| **Licencia**               | Propietaria        | GPL              |
 | **Desarrollador original** | Amnon Barak (HUJI) | Moshe Bar (fork) |
-| **Código modificable** | ❌ No | ✅ Sí |
-| **Último release** | 2017 (4.4.4) | ~2008 |
-| **Estado** | Inactivo | Discontinuado |
-| **Requiere parche kernel** | Sí (hasta 2014) | Sí |
+| **Código modificable**     | ❌ No              | ✅ Sí            |
+| **Último release**         | 2017 (4.4.4)       | ~2008            |
+| **Estado**                 | Inactivo           | Discontinuado    |
+| **Requiere parche kernel** | Sí (hasta 2014)    | Sí               |
 
 **Fuentes:**
+
 - [Wikipedia: OpenMosix](https://en.wikipedia.org/wiki/OpenMosix)
 - [OpenMosix Is Shutting Down - Slashdot](https://linux.slashdot.org/story/07/07/17/2342252/openmosix-is-shutting-down)
 
@@ -184,19 +191,20 @@ Después del cierre de openMosix, el proyecto **LinuxPMI** continuó desarrollan
 
 ### Soporte Disponible
 
-| Tipo de Soporte | Disponible | Detalles |
-|-----------------|------------|----------|
-| **Documentación oficial** | ✅ Sí | FAQs, guías técnicas, manuales PDF |
-| **Foros de comunidad** | ⚠️ Limitado | Información histórica en línea, sin actividad reciente |
-| **Lista de correo** | ⚠️ No verificada | Información no disponible públicamente |
-| **Soporte comercial** | ❌ No | No existe empresa comercial dedicada |
-| **GitHub / Código abierto** | ❌ No | No hay repositorio público |
-| **Actualizaciones activas** | ❌ No | Último release: octubre 2017 |
-| **Soporte académico** | ✅ Parcial | Publicaciones académicas, papers técnicos |
+| Tipo de Soporte             | Disponible       | Detalles                                               |
+| --------------------------- | ---------------- | ------------------------------------------------------ |
+| **Documentación oficial**   | ✅ Sí            | FAQs, guías técnicas, manuales PDF                     |
+| **Foros de comunidad**      | ⚠️ Limitado      | Información histórica en línea, sin actividad reciente |
+| **Lista de correo**         | ⚠️ No verificada | Información no disponible públicamente                 |
+| **Soporte comercial**       | ❌ No            | No existe empresa comercial dedicada                   |
+| **GitHub / Código abierto** | ❌ No            | No hay repositorio público                             |
+| **Actualizaciones activas** | ❌ No            | Último release: octubre 2017                           |
+| **Soporte académico**       | ✅ Parcial       | Publicaciones académicas, papers técnicos              |
 
 ### Recursos Documentales Disponibles
 
 El sitio oficial ofrece:
+
 - [MOSIX FAQ](http://www.mosix.cs.huji.ac.il/faq/output/faq_toc.html)
 - [MOSIX Administrator's Guide (PDF)](http://www.mosix.cs.huji.ac.il/pub/Guide.pdf)
 - [MOSIX White Paper (PDF)](http://www.mosix.cs.huji.ac.il/pub/MOSIX_wp.pdf)
@@ -206,7 +214,7 @@ El sitio oficial ofrece:
 
 Según documentación histórica de **USENIX (2000)**, existían estos valores para un cluster de producción:
 
-> **$61,141.25 USD por adelantado** + **$16,835 USD anual** por licencias de soporte
+> ⚠ **$61,141.25 USD** correspondía a **LSF** (Load Sharing Facility), no a MOSIX. MOSIX era gratuito para uso académico en 2000.
 
 ⚠️ **ESTA INFORMACIÓN ES OBSOLETA Y NO VERIFICABLE EN 2026.** No hay confirmación de que estos precios sigan vigentes o que el soporte aún esté disponible.
 
@@ -220,18 +228,19 @@ Para información actualizada sobre licenciamiento o soporte, se recomienda cont
 
 ### Veredicto: **Proyecto Esencialmente Inactivo**
 
-| Indicador | Estado |
-|-----------|--------|
-| **Último release** | MOSIX-4.4.4 (24 de octubre de 2017) |
-| **Antigüedad del último release** | Más de **8 años** |
-| **Desarrollo activo** | ❌ No |
-| **Soporte comercial** | ❌ No |
-| **Sitio web funcional** | ✅ Sí (pero sin actualizaciones) |
-| **Documentación actualizada** | ❌ No |
+| Indicador                         | Estado                              |
+| --------------------------------- | ----------------------------------- |
+| **Último release**                | MOSIX-4.4.4 (24 de octubre de 2017) |
+| **Antigüedad del último release** | Más de **8 años**                   |
+| **Desarrollo activo**             | ❌ No                               |
+| **Soporte comercial**             | ❌ No                               |
+| **Sitio web funcional**           | ✅ Sí (pero sin actualizaciones)    |
+| **Documentación actualizada**     | ❌ No                               |
 
 ### Análisis de Actividad
 
 **Uso histórico documentado:**
+
 - Un post de **LinkedIn (2022)** menciona que Mike Kemelmakher (VP Product en Majestic Labs) diseñó y administró clusters HPC basados en Linux y MOSIX, indicando uso en entornos de producción historically
 - Un post de **Facebook (diciembre 2022)** indica que MOSIX "tiene buena reputación y no hay tarifa de licencia para uso no comercial"
 - **No se encontraron casos de uso en producción documentados después de 2017**
@@ -240,12 +249,12 @@ Para información actualizada sobre licenciamiento o soporte, se recomienda cont
 
 MOSIX ha sido **superdado por tecnologías modernas**:
 
-| Tecnología | Tipo | Estado | Adopción HPC |
-|------------|------|--------|--------------|
-| **MOSIX** | Migración de procesos (nivel SO) | Inactivo | Nula (histórico) |
-| **SLURM** | Job scheduling | Muy activo | >60% Top500 |
-| **Kubernetes** | Orquestación de contenedores | Muy activo | Creciente |
-| **OpenMPI** | Comunicación MPI | Muy activo | Muy amplia |
+| Tecnología     | Tipo                             | Estado     | Adopción HPC     |
+| -------------- | -------------------------------- | ---------- | ---------------- |
+| **MOSIX**      | Migración de procesos (nivel SO) | Inactivo   | Nula (histórico) |
+| **SLURM**      | Job scheduling                   | Muy activo | >60% Top500      |
+| **Kubernetes** | Orquestación de contenedores     | Muy activo | Creciente        |
+| **OpenMPI**    | Comunicación MPI                 | Muy activo | Muy amplia       |
 
 ### ¿Tiene Sentido Usar MOSIX en 2026?
 
@@ -268,6 +277,7 @@ MOSIX ha sido **superdado por tecnologías modernas**:
 MOSIX es un **proyecto de investigación históricamente significativo pero técnicamente obsoleto**. Representa una era de cluster computing anterior a los contenedores y orchestrators modernos. Para uso académico e histórico sigue siendo relevante como material de estudio; para implementación en producción moderna, **no se recomienda**.
 
 **Fuentes:**
+
 - [MOSIX Official Site](http://www.mosix.org/)
 - [MOSIX Changelog - Last update 2017](https://mosix.cs.huji.ac.il/txt_changelog.html)
 - [Wikipedia - MOSIX](https://en.wikipedia.org/wiki/MOSIX)
@@ -277,18 +287,18 @@ MOSIX es un **proyecto de investigación históricamente significativo pero téc
 
 ## Resumen Ejecutivo
 
-| Aspecto | Detalle |
-|---------|---------|
+| Aspecto                      | Detalle                                                                         |
+| ---------------------------- | ------------------------------------------------------------------------------- |
 | **Organización responsable** | Grupo de Investigación en Sistemas Distribuidos, Hebrew University of Jerusalem |
-| **Investigador principal** | Prof. Amnon Barak |
-| **Tipo de proyecto** | Investigación académica (no empresa comercial) |
-| **Origen** | 1977 (como MOS), evolución continua hasta 2017 |
-| **Modelo de licencia** | Propietario restrictivo (sin modificaciones ni derivados) |
-| **Fork open source** | openMosix (2002-2008), luego LinuxPMI (discontinuado) |
-| **Soporte comercial** | No disponible |
-| **Último release** | MOSIX-4.4.4 (octubre 2017) |
-| **Estado actual** | Inactivo (sin desarrollo desde 2017) |
-| **Relevancia actual** | Histórica/académica (no recomendada para producción) |
+| **Investigador principal**   | Prof. Amnon Barak                                                               |
+| **Tipo de proyecto**         | Investigación académica (no empresa comercial)                                  |
+| **Origen**                   | 1977 (como MOS), evolución continua hasta 2017                                  |
+| **Modelo de licencia**       | Propietario restrictivo (sin modificaciones ni derivados)                       |
+| **Fork open source**         | openMosix (2002-2008), luego LinuxPMI (discontinuado)                           |
+| **Soporte comercial**        | No disponible                                                                   |
+| **Último release**           | MOSIX-4.4.4 (octubre 2017)                                                      |
+| **Estado actual**            | Inactivo (sin desarrollo desde 2017)                                            |
+| **Relevancia actual**        | Histórica/académica (no recomendada para producción)                            |
 
 ---
 
@@ -311,10 +321,11 @@ MOSIX es un **proyecto de investigación históricamente significativo pero téc
 
 ---
 
-*Documento elaborado para Fundamentos de Sistemas Operativos — Mayo 2026*
-*Basado en investigación existente y fuentes oficiales de MOSIX y publicaciones académicas.*
+_Documento elaborado para Fundamentos de Sistemas Operativos — Mayo 2026_
+_Basado en investigación existente y fuentes oficiales de MOSIX y publicaciones académicas._
 
 ---
+
 ## Nota Académica — Fundamentos de SO
 
 **Conceptos de la materia relacionados:**

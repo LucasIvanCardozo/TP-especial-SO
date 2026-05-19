@@ -10,13 +10,13 @@
 
 MOSIX cuenta con varios documentos oficiales publicados por el grupo de investigación de la Hebrew University of Jerusalem:
 
-| Documento | Descripción | Enlace |
-|-----------|-------------|--------|
-| **MOSIX FAQ** | Preguntas frecuentes sobre instalación, configuración y uso | [FAQ Official](http://www.mosix.cs.huji.ac.il/faq/output/faq_toc.html) |
-| **MOSIX Administrator's Guide** | Guía completa para administradores de clusters | [Guide.pdf](http://www.mosix.cs.huji.ac.il/pub/Guide.pdf) |
-| **MOSIX White Paper** | Introducción general y arquitectura del sistema | [White Paper](http://www.mosix.cs.huji.ac.il/pub/MOSIX_wp.pdf) |
-| **MOSIX Changelog** | Historial de cambios por versión | [Changelog](https://mosix.cs.huji.ac.il/txt_changelog.html) |
-| **Historia de MOSIX** | Línea temporal del proyecto desde 1977 | [History](https://mosix.cs.huji.ac.il/txt_history.html) |
+| Documento                       | Descripción                                                 | Enlace                                                                 |
+| ------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **MOSIX FAQ**                   | Preguntas frecuentes sobre instalación, configuración y uso | [FAQ Official](http://www.mosix.cs.huji.ac.il/faq/output/faq_toc.html) |
+| **MOSIX Administrator's Guide** | Guía completa para administradores de clusters              | [Guide.pdf](http://www.mosix.cs.huji.ac.il/pub/Guide.pdf)              |
+| **MOSIX White Paper**           | Introducción general y arquitectura del sistema             | [White Paper](http://www.mosix.cs.huji.ac.il/pub/MOSIX_wp.pdf)         |
+| **MOSIX Changelog**             | Historial de cambios por versión                            | [Changelog](https://mosix.cs.huji.ac.il/txt_changelog.html)            |
+| **Historia de MOSIX**           | Línea temporal del proyecto desde 1977                      | [History](https://mosix.cs.huji.ac.il/txt_history.html)                |
 
 ### 1.2 Sitio Web Oficial
 
@@ -46,12 +46,12 @@ El sitio oficial de MOSIX (http://www.mosix.org/) permanece accesible pero **no 
 
 El Prof. Amnon Barak y su equipo han publicado numerosos papers académicos sobre MOSIX. A continuación, los más relevantes:
 
-| Publicación | Año | Descripción |
-|-------------|-----|-------------|
-| **"The MOSIX Multicomputer Operating System for High Performance Cluster Computing"** — ScienceDirect | 1997 | Paper fundacional de la arquitectura MOSIX |
-| **"Scalable Cluster Computing with MOSIX for LINUX"** — Columbia University | 1998 | paper seminal con 488+ citas académicas |
-| **"The MOSIX Direct File System Access Method for Supporting Scalable Cluster File Systems"** — Springer | 2004 | paper sobre el sistema DFSA |
-| **"The MOSIX Algorithms for Managing Cluster, Multi-Clusters, GPU"** — TU Dresden | 2011 | Descripción detallada de los algoritmos de balanceo |
+| Publicación                                                                                              | Año  | Descripción                                         |
+| -------------------------------------------------------------------------------------------------------- | ---- | --------------------------------------------------- |
+| **"The MOSIX Multicomputer Operating System for High Performance Cluster Computing"** — ScienceDirect    | 1997 | Paper fundacional de la arquitectura MOSIX          |
+| **"Scalable Cluster Computing with MOSIX for LINUX"** — Columbia University                              | 1998 | paper seminal con 488+ citas académicas             |
+| **"The MOSIX Direct File System Access Method for Supporting Scalable Cluster File Systems"** — Springer | 2004 | paper sobre el sistema DFSA                         |
+| **"The MOSIX Algorithms for Managing Cluster, Multi-Clusters, GPU"** — TU Dresden                        | 2011 | Descripción detallada de los algoritmos de balanceo |
 
 **Fuente:** [Amnon Barak en ResearchGate](https://www.researchgate.net/scientific-contributions/Amnon-Barak-8110256), [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0167739X9700037X)
 
@@ -63,11 +63,13 @@ El Prof. Amnon Barak y su equipo han publicado numerosos papers académicos sobr
 - **PDFs directos:** La Hebrew University distribuye algunos papers desde mosix.cs.huji.ac.il/pub/
 
 **Ejemplo de paper disponible:**
+
 - [The MOSIX Algorithms for Managing Cluster, Multi-Clusters, GPU (PDF)](https://os.inf.tu-dresden.de/Studium/DOS/SS2011/05-MOSIX.pdf)
 
 ### 2.3 Uso Académico Contemporáneo
 
 MOSIX se sigue mencionando en contextos académicos como:
+
 - **Casos de estudio** en cursos de sistemas operativos distribuidos
 - **Referencia histórica** para comparar con tecnologías modernas (SLURM, Kubernetes)
 - **Papers sobre migración de procesos** lo citan como trabajo pionero
@@ -82,13 +84,13 @@ MOSIX se sigue mencionando en contextos académicos como:
 
 **Estado: Prácticamente inexistente**
 
-| Canal | Disponibilidad | Estado |
-|-------|----------------|--------|
-| **Foros dedicados de MOSIX** | ❌ No existen foros activos | — |
-| **Stack Overflow** | ❌ Menos de 20 preguntas con tag "mosix", la mayoría sin respuesta | Inactivo |
-| **Spiceworks Community** | ⚠️ Un hilo de 2026 sobre configuración, sin respuestas oficiales | Muy limitado |
-| **Reddit** | ⚠️ Mención ocasional en hilos de HPC histórico | Casi nada |
-| **Twitter @MOSIX_cluster** | ❌ Cuenta sin actividad reciente | Inactivo |
+| Canal                        | Disponibilidad                                                     | Estado       |
+| ---------------------------- | ------------------------------------------------------------------ | ------------ |
+| **Foros dedicados de MOSIX** | ❌ No existen foros activos                                        | —            |
+| **Stack Overflow**           | ❌ Menos de 20 preguntas con tag "mosix", la mayoría sin respuesta | Inactivo     |
+| **Spiceworks Community**     | ⚠️ Un hilo de 2026 sobre configuración, sin respuestas oficiales   | Muy limitado |
+| **Reddit**                   | ⚠️ Mención ocasional en hilos de HPC histórico                     | Casi nada    |
+| **Twitter @MOSIX_cluster**   | ❌ Cuenta sin actividad reciente                                   | Inactivo     |
 
 **Fuente:** [Spiceworks Community - Configuring a MOSIX Cluster](https://community.spiceworks.com/t/configuring-a-mosix-cluster/1249164/)
 
@@ -96,7 +98,7 @@ MOSIX se sigue mencionando en contextos académicos como:
 
 Una búsqueda reciente (Feb 2026) en Spiceworks mostró:
 
-> *"I just want to share hardware resources from my main computer, and while exploring I came across MOSIX. The problem is that I cannot find..."* — Pregunta sin respuesta oficial.
+> _"I just want to share hardware resources from my main computer, and while exploring I came across MOSIX. The problem is that I cannot find..."_ — Pregunta sin respuesta oficial.
 
 Esto ilustra la **falta de soporte comunitario activo** paraMOSIX en 2026.
 
@@ -122,13 +124,13 @@ El fork open source **openMosix** (discontinuado en 2008) tuvo su propia comunid
 
 **NO HAY soporte comercial disponible para MOSIX.**
 
-| Aspecto | Detalle |
-|---------|---------|
-| **Empresa comercial** | ❌ No existe |
-| **Partners oficiales** | ❌ No hay ningún partner o reseller |
-| **Soporte técnico profesional** | ❌ No disponible |
-| **Contratos de mantenimiento** | ❌ No disponibles |
-| **Certificaciones** | ❌ No existen |
+| Aspecto                         | Detalle                             |
+| ------------------------------- | ----------------------------------- |
+| **Empresa comercial**           | ❌ No existe                        |
+| **Partners oficiales**          | ❌ No hay ningún partner o reseller |
+| **Soporte técnico profesional** | ❌ No disponible                    |
+| **Contratos de mantenimiento**  | ❌ No disponibles                   |
+| **Certificaciones**             | ❌ No existen                       |
 
 **Fuente:** [MOSIX Distributions - Licensing](https://mosix.cs.huji.ac.il/txt_distributions.html)
 
@@ -136,10 +138,10 @@ El fork open source **openMosix** (discontinuado en 2008) tuvo su propia comunid
 
 Según documentación histórica de **USENIX (2000)**, existía pricing para un cluster de producción:
 
-| Concepto | Costo histórico (USD, año 2000) |
-|----------|-------------------------------|
-| Licencia inicial (cluster de producción) | $61,141.25 |
-| Mantenimiento anual | $16,835.00 |
+| Concepto                                 | Costo histórico (USD, año 2000) |
+| ---------------------------------------- | ------------------------------- |
+| Licencia inicial (cluster de producción) | ⚠ $61,141.25 → LSF, no MOSIX    |
+| Mantenimiento anual                      | $16,835.00                      |
 
 > ⚠️ **ADVERTENCIA:** Esta información es **obsoleta y no verificable en 2026**. No hay garantía de que estos valores tengan relación con cualquier modelo actual, si es que existe alguno.
 
@@ -150,11 +152,11 @@ Según documentación histórica de **USENIX (2000)**, existía pricing para un 
 Según la página oficial de distribuciones:
 
 - MOSIX usa una **licencia propietaria restrictiva**
-- La licencia indica: *"You are not allowed to modify or reverse-engineer THE PRODUCT"*
+- La licencia indica: _"You are not allowed to modify or reverse-engineer THE PRODUCT"_
 - **Sin garantía** de ningún tipo
 - **Ley aplicable:** Israel
 
-Un mensaje en foros sugiere que *"MOSIX no longer requires a license fee for non-commercial use"*, pero **esto no está verificado oficialmente** y debe confirmarse directamente con los desarrolladores.
+Un mensaje en foros sugiere que _"MOSIX no longer requires a license fee for non-commercial use"_, pero **esto no está verificado oficialmente** y debe confirmarse directamente con los desarrolladores.
 
 > **Recomendación:** Contactar a mosix@cs.huji.ac.il para información actualizada sobre licenciamiento.
 
@@ -166,11 +168,11 @@ Un mensaje en foros sugiere que *"MOSIX no longer requires a license fee for non
 
 **NO existe un repositorio oficial de MOSIX en GitHub.**
 
-| Repositorio | Descripción | Estado |
-|-------------|-------------|--------|
+| Repositorio                                       | Descripción                                                                      | Estado                                     |
+| ------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
 | [kurhula/mosix](https://github.com/kurhula/mosix) | Repositorio NO oficial con código fuente MOSIX-4.4.3 para instalación automática | **Inactivo** (3 commits, último hace años) |
-| [moshix](https://github.com/moshix) | Usuario de GitHub con diferentes proyectos (no relacionado con MOSIX) | Irrelevante |
-| **openMosix** | Fork histórico open source, ahora archivado | Discontinuado desde 2008 |
+| [moshix](https://github.com/moshix)               | Usuario de GitHub con diferentes proyectos (no relacionado con MOSIX)            | Irrelevante                                |
+| **openMosix**                                     | Fork histórico open source, ahora archivado                                      | Discontinuado desde 2008                   |
 
 ### 5.2 Características del Repositorio No-Oficial
 
@@ -197,13 +199,13 @@ El repositorio [kurhula/mosix](https://github.com/kurhula/mosix) tiene:
 
 **NO HAY actualizaciones activas desde octubre de 2017.**
 
-| Aspecto | Estado |
-|---------|--------|
-| **Última versión estable** | MOSIX-4.4.4 (24 de octubre de 2017) |
-| **Última actualización de documentación** | 2017 o anterior |
-| **Parches de seguridad** | ❌ Ninguno desde 2017 |
-| **Compatibilidad con kernels modernos** | ⚠️ Limitada (soporta hasta Linux 4.X según documentación histórica) |
-| **Desarrollador principal** | Prof. Amnon Barak (Hebrew University) — sin actualización activa |
+| Aspecto                                   | Estado                                                              |
+| ----------------------------------------- | ------------------------------------------------------------------- |
+| **Última versión estable**                | MOSIX-4.4.4 (24 de octubre de 2017)                                 |
+| **Última actualización de documentación** | 2017 o anterior                                                     |
+| **Parches de seguridad**                  | ❌ Ninguno desde 2017                                               |
+| **Compatibilidad con kernels modernos**   | ⚠️ Limitada (soporta hasta Linux 4.X según documentación histórica) |
+| **Desarrollador principal**               | Prof. Amnon Barak (Hebrew University) — sin actualización activa    |
 
 **Fuente:** [MOSIX Changelog](https://mosix.cs.huji.ac.il/txt_changelog.html)
 
@@ -211,22 +213,22 @@ El repositorio [kurhula/mosix](https://github.com/kurhula/mosix) tiene:
 
 Para usuarios potenciales en 2026:
 
-| Problema | Impacto |
-|----------|---------|
-| **Sin parches de seguridad** | Riesgo significativo si se usa en producción |
-| **Sin soporte para kernels modernos** | Puede no funcionar en distribuciones Linux actuales (Ubuntu 22.04+, etc.) |
-| **Sin soporte para arquitectura ARM** | Limitado a x86/x86_64 |
-| **Sin soporte para containers modernos** | Docker, Kubernetes no tienen integración nativa |
-| **Obsolescencia tecnológica** | SLURM, Kubernetes dominan el mercado HPC actual |
+| Problema                                 | Impacto                                                                   |
+| ---------------------------------------- | ------------------------------------------------------------------------- |
+| **Sin parches de seguridad**             | Riesgo significativo si se usa en producción                              |
+| **Sin soporte para kernels modernos**    | Puede no funcionar en distribuciones Linux actuales (Ubuntu 22.04+, etc.) |
+| **Sin soporte para arquitectura ARM**    | Limitado a x86/x86_64                                                     |
+| **Sin soporte para containers modernos** | Docker, Kubernetes no tienen integración nativa                           |
+| **Obsolescencia tecnológica**            | SLURM, Kubernetes dominan el mercado HPC actual                           |
 
 ### 6.3 Comparación: Proyecto Activo vs Inactivo
 
-| Característica | MOSIX (Inactivo) | SLURM (Activo) | Kubernetes (Activo) |
-|----------------|------------------|----------------|---------------------|
-| **Última actualización** | Octubre 2017 | Diaria | Diaria |
-| **Parches de seguridad** | ❌ | ✅ | ✅ |
-| **Soporte kernels modernos** | ⚠️ Limitado | ✅ | ✅ |
-| **Comunidad activa** | ❌ | ✅ Miles de contribuidores | ✅ Massive |
+| Característica               | MOSIX (Inactivo) | SLURM (Activo)             | Kubernetes (Activo) |
+| ---------------------------- | ---------------- | -------------------------- | ------------------- |
+| **Última actualización**     | Octubre 2017     | Diaria                     | Diaria              |
+| **Parches de seguridad**     | ❌               | ✅                         | ✅                  |
+| **Soporte kernels modernos** | ⚠️ Limitado      | ✅                         | ✅                  |
+| **Comunidad activa**         | ❌               | ✅ Miles de contribuidores | ✅ Massive          |
 
 **Fuente:** [Top500 Supercomputers - Slurm adoption](https://www.top500.org/)
 
@@ -236,11 +238,11 @@ Para usuarios potenciales en 2026:
 
 ### 7.1 Información de Contacto
 
-| Método | Detalle |
-|--------|---------|
-| **Email** | mosix@cs.huji.ac.il |
-| **Sitio web** | http://www.mosix.org/ |
-| **Hebrew University** | mosix.cs.huji.ac.il |
+| Método                | Detalle               |
+| --------------------- | --------------------- |
+| **Email**             | mosix@cs.huji.ac.il   |
+| **Sitio web**         | http://www.mosix.org/ |
+| **Hebrew University** | mosix.cs.huji.ac.il   |
 
 ### 7.2 Consideraciones sobre el Contacto
 
@@ -255,12 +257,12 @@ Para usuarios potenciales en 2026:
 
 Basado en la información disponible:
 
-| Situación | Respuesta probable |
-|-----------|-------------------|
-| **Preguntas técnicas complejas** | Probablemente sin respuesta |
-| **Problemas de instalación** | Documentación existente puede ayudar |
-| **Licenciamiento comercial** | Posible respuesta (si hay persona disponible) |
-| **Reportes de bugs** | Inútil — no hay desarrollo activo |
+| Situación                        | Respuesta probable                            |
+| -------------------------------- | --------------------------------------------- |
+| **Preguntas técnicas complejas** | Probablemente sin respuesta                   |
+| **Problemas de instalación**     | Documentación existente puede ayudar          |
+| **Licenciamiento comercial**     | Posible respuesta (si hay persona disponible) |
+| **Reportes de bugs**             | Inútil — no hay desarrollo activo             |
 
 ---
 
@@ -268,25 +270,25 @@ Basado en la información disponible:
 
 ### 8.1 Soporte Disponible en Alternativas
 
-| Sistema | Soporte Comercial | Comunidad Activa | GitHub | Actualizaciones |
-|---------|-------------------|------------------|--------|-----------------|
-| **MOSIX** | ❌ No hay | ❌ Casi inexistente | ⚠️ No oficial (archivado) | ❌ Desde 2017 |
-| **SLURM** | ✅ SchedMD | ✅ Muy activa | ✅ [slurm.schedmd.com](https://github.com/SchedMD/slurm) | ✅ Constantes |
-| **Kubernetes** | ✅ CNCF + multi-vendor | ✅ Massive | ✅ [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | ✅ Diarias |
-| **PBS Professional** | ✅ Altair | ✅ Activa | ❌ Propietario | ✅ Constantes |
-| **OpenMPI** | ❌ Comunidad | ✅ Activa | ✅ [open-mpi/hwloc](https://github.com/open-mpi/hwloc) | ✅ Regulares |
+| Sistema              | Soporte Comercial      | Comunidad Activa    | GitHub                                                               | Actualizaciones |
+| -------------------- | ---------------------- | ------------------- | -------------------------------------------------------------------- | --------------- |
+| **MOSIX**            | ❌ No hay              | ❌ Casi inexistente | ⚠️ No oficial (archivado)                                            | ❌ Desde 2017   |
+| **SLURM**            | ✅ SchedMD             | ✅ Muy activa       | ✅ [slurm.schedmd.com](https://github.com/SchedMD/slurm)             | ✅ Constantes   |
+| **Kubernetes**       | ✅ CNCF + multi-vendor | ✅ Massive          | ✅ [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | ✅ Diarias      |
+| **PBS Professional** | ✅ Altair              | ✅ Activa           | ❌ Propietario                                                       | ✅ Constantes   |
+| **OpenMPI**          | ❌ Comunidad           | ✅ Activa           | ✅ [open-mpi/hwloc](https://github.com/open-mpi/hwloc)               | ✅ Regulares    |
 
 ### 8.2 ¿Por Qué Elegir una Alternativa?
 
 Si el objetivo es tener **soporte activo y comunidad**:
 
-| Necesidad | Recomendación |
-|-----------|---------------|
-| Job scheduling HPC | **SLURM** (SchedMD ofrece soporte comercial) |
-| Orquestación moderna | **Kubernetes** (CNCF, múltiples vendors) |
-| Cómputo paralelo MPI | **OpenMPI** (comunidad activa) |
-| Soporte empresarial | **PBS Professional** (Altair) |
-| Estudio histórico/educativo | **MOSIX** (con contexto de obsolescencia) |
+| Necesidad                   | Recomendación                                |
+| --------------------------- | -------------------------------------------- |
+| Job scheduling HPC          | **SLURM** (SchedMD ofrece soporte comercial) |
+| Orquestación moderna        | **Kubernetes** (CNCF, múltiples vendors)     |
+| Cómputo paralelo MPI        | **OpenMPI** (comunidad activa)               |
+| Soporte empresarial         | **PBS Professional** (Altair)                |
+| Estudio histórico/educativo | **MOSIX** (con contexto de obsolescencia)    |
 
 ### 8.3 Ecosistema de Soporte: SchedMD (SLURM) vs MOSIX
 
@@ -299,6 +301,7 @@ Si el objetivo es tener **soporte activo y comunidad**:
 - Certificaciones disponibles
 
 **MOSIX:**
+
 - Sin empresa ni equipo de soporte
 - Documentación desactualizada desde 2017
 - Email sin garantía de respuesta
@@ -310,15 +313,15 @@ Si el objetivo es tener **soporte activo y comunidad**:
 
 ### 9.1 Estado del Soporte MOSIX
 
-| Aspecto | Valoración |
-|---------|------------|
-| Documentación oficial | ⚠️ Existente pero desactualizada |
-| Publicaciones académicas | ✅ Abundantes (contexto histórico) |
-| Foros/Comunidad | ❌ Prácticamente inexistente |
-| Soporte comercial | ❌ NO HAY |
-| GitHub/código abierto | ❌ NO HAY (es propietario) |
-| Actualizaciones activas | ❌ NO (desde octubre 2017) |
-| Contacto directo | ⚠️ mosix@cs.huji.ac.il (sin garantía) |
+| Aspecto                  | Valoración                            |
+| ------------------------ | ------------------------------------- |
+| Documentación oficial    | ⚠️ Existente pero desactualizada      |
+| Publicaciones académicas | ✅ Abundantes (contexto histórico)    |
+| Foros/Comunidad          | ❌ Prácticamente inexistente          |
+| Soporte comercial        | ❌ NO HAY                             |
+| GitHub/código abierto    | ❌ NO HAY (es propietario)            |
+| Actualizaciones activas  | ❌ NO (desde octubre 2017)            |
+| Contacto directo         | ⚠️ mosix@cs.huji.ac.il (sin garantía) |
 
 ### 9.2 Recomendación
 
@@ -328,12 +331,12 @@ Si el objetivo es tener **soporte activo y comunidad**:
 
 ### 9.3 Alternativas con Soporte Activo
 
-| Si necesitas funcionalidad similar a MOSIX... | Considera... |
-|-----------------------------------------------|--------------|
-| Migración de procesos en cluster | SLURM + scripts de migración |
-| Single System Image | Kubernetes (con limitaciones) |
-| Balanceo de carga automático | SLURM, Kubernetes, Mesos |
-| Comunidad y soporte activo | SLURM, Kubernetes |
+| Si necesitas funcionalidad similar a MOSIX... | Considera...                  |
+| --------------------------------------------- | ----------------------------- |
+| Migración de procesos en cluster              | SLURM + scripts de migración  |
+| Single System Image                           | Kubernetes (con limitaciones) |
+| Balanceo de carga automático                  | SLURM, Kubernetes, Mesos      |
+| Comunidad y soporte activo                    | SLURM, Kubernetes             |
 
 ---
 
@@ -353,6 +356,7 @@ Si el objetivo es tener **soporte activo y comunidad**:
 12. [USENIX Documentation 2000 - Historical pricing (obsoleto)](https://www.usenix.org/02/archive/highlights/html/mosix.html)
 
 ---
+
 ## Nota Académica — Fundamentos de SO
 
 **Conceptos de la materia relacionados:**
@@ -365,5 +369,5 @@ Si el objetivo es tener **soporte activo y comunidad**:
 
 ---
 
-*Documento preparado para Fundamentos de Sistemas Operativos — Mayo 2026*
-*Basado en investigación existente y búsqueda web complementaria*
+_Documento preparado para Fundamentos de Sistemas Operativos — Mayo 2026_
+_Basado en investigación existente y búsqueda web complementaria_

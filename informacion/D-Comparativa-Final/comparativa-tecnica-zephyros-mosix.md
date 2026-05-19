@@ -6,28 +6,28 @@
 
 ## Tabla Comparativa
 
-| Característica | Zephyr OS | MOSIX |
-|----------------|-----------|-------|
-| **Tipo** | RTOS para sistemas embebidos | Cluster OS / HPC (sistema operativo distribuido) |
-| **Licencia** | Apache 2.0 (open source, permisiva, no copyleft) | Propietaria restrictiva (prohíbe modificación, reverse engineering y derivados) |
-| **Sponsor/Organización** | Linux Foundation (neutral, multi-vendor) | Hebrew University of Jerusalem — Grupo de Investigación en Sistemas Distribuidos |
-| **Investigador Principal** | N/A (proyecto comunitario) | Prof. Amnon Barak |
-| **Target Market** | IoT, microcontroladores, wearables, dispositivos médicos, industrial | Clusters HPC, supercomputadoras, grids de investigación |
-| **Año de origen** | 2016 (como Zephyr Project) | 1977 (como MOS) — 49 años de historia |
-| **Estado actual (2026)** | **Activo** — LTS3, desarrollo continuo, 3000+ contribuyentes | **Inactivo** — Último release: MOSIX-4.4.4 (24 de octubre de 2017), hace más de 8 años |
-| **Arquitectura del kernel** | Monolítico unificado (desde v1.6, diciembre 2016) | Extensión de kernel Linux (módulo/daemon desde MOSIX-4, 2014) |
-| **Memoria** | Unificada con protección via MPU (Memory Protection Unit) | Distribuida ("shared-nothing") — cada nodo tiene su propia memoria local |
-| **Gestión de memoria** | Heap, Memory Slabs, Demand Paging, Virtual Memory, Memory Domains, User Mode | Memory Ushering (migración proactiva de procesos por memoria baja), shared-nothing entre nodos |
-| **Migración de procesos** | No aplica — no es un sistema distribuido | **Sí** — Migración preemptiva automática de procesos entre nodos del cluster |
-| **File System** | LittleFS, FAT FS, NVS (Non-Volatile Storage) via VFS | DFSA (Direct File System Access) — acceso transparente a archivos en cualquier nodo; no es un FS paralelo |
-| **Seguridad** | PSA Crypto API, Secure Boot (MCUboot), Secure Storage, MPU-based memory protection, User Mode, OpenSSF Gold Badge (desde 2019), Security Subcommittee dedicado | Sandbox para procesos guest, checkpoint/restart. **Sin verificación criptográfica** de integridad. Requiere nodos **mutuamente confiables** (no apta para entornos hostiles) |
-| **Administración de CPU** | Scheduling preemptive, cooperative, híbrido. AMP (OpenAMP) y SMP soportados | Migración preemptiva automática de procesos, balanceo de carga dinámico entre nodos, descubrimiento automático de recursos |
+| Característica                       | Zephyr OS                                                                                                                                                                            | MOSIX                                                                                                                                                                                                                       |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Tipo**                             | RTOS para sistemas embebidos                                                                                                                                                         | Cluster OS / HPC (sistema operativo distribuido)                                                                                                                                                                            |
+| **Licencia**                         | Apache 2.0 (open source, permisiva, no copyleft)                                                                                                                                     | Propietaria restrictiva (prohíbe modificación, reverse engineering y derivados)                                                                                                                                             |
+| **Sponsor/Organización**             | Linux Foundation (neutral, multi-vendor)                                                                                                                                             | Hebrew University of Jerusalem — Grupo de Investigación en Sistemas Distribuidos                                                                                                                                            |
+| **Investigador Principal**           | N/A (proyecto comunitario)                                                                                                                                                           | Prof. Amnon Barak                                                                                                                                                                                                           |
+| **Target Market**                    | IoT, microcontroladores, wearables, dispositivos médicos, industrial                                                                                                                 | Clusters HPC, supercomputadoras, grids de investigación                                                                                                                                                                     |
+| **Año de origen**                    | 2016 (como Zephyr Project)                                                                                                                                                           | 1977 (como MOS) — 49 años de historia                                                                                                                                                                                       |
+| **Estado actual (2026)**             | **Activo** — LTS3, desarrollo continuo, 3000+ contribuyentes                                                                                                                         | **Inactivo** — Último release: MOSIX-4.4.4 (24 de octubre de 2017), hace más de 8 años                                                                                                                                      |
+| **Arquitectura del kernel**          | Monolítico unificado (desde v1.6, diciembre 2016)                                                                                                                                    | Extensión de kernel Linux (módulo/daemon desde MOSIX-4, 2014)                                                                                                                                                               |
+| **Memoria**                          | Unificada con protección via MPU (Memory Protection Unit)                                                                                                                            | Distribuida ("shared-nothing") — cada nodo tiene su propia memoria local                                                                                                                                                    |
+| **Gestión de memoria**               | Heap, Memory Slabs, Demand Paging, Virtual Memory, Memory Domains, User Mode                                                                                                         | Memory Ushering (migración proactiva de procesos por memoria baja), shared-nothing entre nodos                                                                                                                              |
+| **Migración de procesos**            | No aplica — no es un sistema distribuido                                                                                                                                             | **Sí** — Migración preemptiva automática de procesos entre nodos del cluster                                                                                                                                                |
+| **File System**                      | LittleFS, FAT FS, NVS (Non-Volatile Storage) via VFS                                                                                                                                 | DFSA (Direct File System Access) — acceso transparente a archivos en cualquier nodo; no es un FS paralelo                                                                                                                   |
+| **Seguridad**                        | PSA Crypto API, Secure Boot (MCUboot), Secure Storage, MPU-based memory protection, User Mode, OpenSSF Gold Badge (desde 2019), Security Subcommittee dedicado                       | Sandbox para procesos guest, checkpoint/restart. **Sin verificación criptográfica** de integridad. Requiere nodos **mutuamente confiables** (no apta para entornos hostiles)                                                |
+| **Administración de CPU**            | Scheduling preemptive, cooperative, híbrido. AMP (OpenAMP) y SMP soportados                                                                                                          | Migración preemptiva automática de procesos, balanceo de carga dinámico entre nodos, descubrimiento automático de recursos                                                                                                  |
 | **Facilidades para desarrolladores** | SDK completo (toolchains, QEMU, OpenOCD), CMake, Kconfig, Devicetree, West (meta-tool), documentación exhaustiva, >1000 boards soportadas, API POSIX-like parcial, >15 arquitecturas | `mosrun` (iniciar procesos migrables), `/proc/hpc` (interfaz de administración), `mosmon`, `mosps`, `mostat`, `mosconf` (configuración automática). **Sin recompilación necesaria** — aplicaciones Linux estándar funcionan |
-| **Difusión/Adopción** | 70% organizaciones en Norteamérica, 62% Europa (2026), 3000+ contribuyentes | Histórico: uso académico (1990s-2000s), universidades como Columbia, Virginia Tech, Hebrew University. **Cero casos de producción modernos documentados** |
-| **Soporte** | Comunidad (Discord, mailing lists, GitHub Discussions), Corporate members (Nordic, Intel, NXP, Renesas, Wind River), Training Partner Program oficial, Wind River Rocket (comercial) | **No disponible** — Proyecto abandonado. Único contacto: mosix@cs.huji.ac.il (sin garantía de respuesta) |
-| **Casos de uso actuales** | IoT, wearables (Oticon More), dispositivos médicos (HealthyPi Move), industrial (Vestas), educativa, edge computing | **Solo académico/histórico** — Caso de estudio para conceptos de migración de procesos y SSI. No se recomienda para producción |
-| **Costos** | Gratis (Apache 2.0), sin regalías, uso comercial libre | Histórico (año 2000): $61,141.25 USD licencia inicial + $16,835 USD anual mantenimiento. **Precio actual: información no disponible públicamente**. Para uso no comercial, según foros: "sin tarifa de licencia" (no verificado oficialmente) |
-| **Competidores reales** | FreeRTOS, NuttX, RT-Thread, RIOT OS, ThreadX | SLURM, Kubernetes, OpenMPI, PBS Professional |
+| **Difusión/Adopción**                | 70% organizaciones en Norteamérica, 62% Europa (2026), 3000+ contribuyentes                                                                                                          | Histórico: uso académico (1990s-2000s), universidades como Columbia, Virginia Tech, Hebrew University. **Cero casos de producción modernos documentados**                                                                   |
+| **Soporte**                          | Comunidad (Discord, mailing lists, GitHub Discussions), Corporate members (Nordic, Intel, NXP, Renesas, Wind River), Training Partner Program oficial, Wind River Rocket (comercial) | **No disponible** — Proyecto abandonado. Único contacto: mosix@cs.huji.ac.il (sin garantía de respuesta)                                                                                                                    |
+| **Casos de uso actuales**            | IoT, wearables (Oticon More), dispositivos médicos (HealthyPi Move), industrial (Vestas), educativa, edge computing                                                                  | **Solo académico/histórico** — Caso de estudio para conceptos de migración de procesos y SSI. No se recomienda para producción                                                                                              |
+| **Costos**                           | Gratis (Apache 2.0), sin regalías, uso comercial libre                                                                                                                               | ⚠ Histórico (año 2000): $61,141.25 USD correspondía a **LSF**, no a MOSIX. MOSIX era gratuito para uso académico. **Precio actual: información no disponible**.                                                             |
+| **Competidores reales**              | FreeRTOS, NuttX, RT-Thread, RIOT OS, ThreadX                                                                                                                                         | SLURM, Kubernetes, OpenMPI, PBS Professional                                                                                                                                                                                |
 
 ---
 
@@ -43,90 +43,90 @@ Son productos de **categorías completamente diferentes**. Zephyr compite con Fr
 
 ### 2. Licencia y Modelo de Desarrollo
 
-| Aspecto | Zephyr OS | MOSIX |
-|---------|-----------|-------|
-| **Código abierto** | ✅ Sí (Apache 2.0) | ❌ No |
-| **Permiso de modificación** | ✅ Sí | ❌ No |
-| **Obras derivadas** | ✅ Sí | ❌ No |
-| **Copyleft** | ❌ No | N/A |
-| **Uso comercial** | ✅ Libre sin regalías | ⚠️ Restringido (licencia propietaria) |
-| **Desarrollo activo** | ✅ Miles de contribuciones | ❌ Abandonado desde 2017 |
+| Aspecto                     | Zephyr OS                  | MOSIX                                 |
+| --------------------------- | -------------------------- | ------------------------------------- |
+| **Código abierto**          | ✅ Sí (Apache 2.0)         | ❌ No                                 |
+| **Permiso de modificación** | ✅ Sí                      | ❌ No                                 |
+| **Obras derivadas**         | ✅ Sí                      | ❌ No                                 |
+| **Copyleft**                | ❌ No                      | N/A                                   |
+| **Uso comercial**           | ✅ Libre sin regalías      | ⚠️ Restringido (licencia propietaria) |
+| **Desarrollo activo**       | ✅ Miles de contribuciones | ❌ Abandonado desde 2017              |
 
 ### 3. Memoria
 
-| Aspecto | Zephyr OS | MOSIX |
-|---------|-----------|-------|
-| **Modelo** | Unificada (Single Address Space) con protección por hardware | Distribuida (shared-nothing) — cada nodo su propia RAM |
-| **Protección** | MPU (Memory Protection Unit), Memory Domains, User Mode | Aislamiento vía sandbox, pero sin protección a nivel hardware entre nodos |
-| **Compartida entre nodos** | No aplica (no es distribuido) | ❌ No soportada |
-| **Memory Ushering** | No | ✅ Sí — migra proactivamente procesos antes de OOM |
-| **Overhead de migración** | No aplica | ⚠️ Alto para procesos con mucha memoria |
+| Aspecto                    | Zephyr OS                                                    | MOSIX                                                                     |
+| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| **Modelo**                 | Unificada (Single Address Space) con protección por hardware | Distribuida (shared-nothing) — cada nodo su propia RAM                    |
+| **Protección**             | MPU (Memory Protection Unit), Memory Domains, User Mode      | Aislamiento vía sandbox, pero sin protección a nivel hardware entre nodos |
+| **Compartida entre nodos** | No aplica (no es distribuido)                                | ❌ No soportada                                                           |
+| **Memory Ushering**        | No                                                           | ✅ Sí — migra proactivamente procesos antes de OOM                        |
+| **Overhead de migración**  | No aplica                                                    | ⚠️ Alto para procesos con mucha memoria                                   |
 
 ### 4. Migración de Procesos
 
-| Aspecto | Zephyr OS | MOSIX |
-|---------|-----------|-------|
-| **Migración de procesos** | No — es un RTOS single-node | ✅ Sí — preemptiva, automática, transparente |
-| **Checkpoint/Restart** | No (no aplica) | ✅ Sí |
-| **Balanceo de carga automático** | No (no aplica) | ✅ Sí — basado en CPU, memoria, velocidad |
-| **Aplicaciones sin modificación** | No aplica | ✅ Sí — binarios Linux estándar funcionan |
-| **Memoria compartida** | No aplica | ❌ No soportada |
-| **Threads** | Sí soportados | ❌ No soportados de forma nativa |
+| Aspecto                           | Zephyr OS                   | MOSIX                                        |
+| --------------------------------- | --------------------------- | -------------------------------------------- |
+| **Migración de procesos**         | No — es un RTOS single-node | ✅ Sí — preemptiva, automática, transparente |
+| **Checkpoint/Restart**            | No (no aplica)              | ✅ Sí                                        |
+| **Balanceo de carga automático**  | No (no aplica)              | ✅ Sí — basado en CPU, memoria, velocidad    |
+| **Aplicaciones sin modificación** | No aplica                   | ✅ Sí — binarios Linux estándar funcionan    |
+| **Memoria compartida**            | No aplica                   | ❌ No soportada                              |
+| **Threads**                       | Sí soportados               | ❌ No soportados de forma nativa             |
 
 ### 5. Sistema de Archivos
 
-| Aspecto | Zephyr OS | MOSIX |
-|---------|-----------|-------|
-| **FS integrado** | LittleFS (flash), FAT FS (tarjetas SD), NVS (clave-valor) | No tiene FS propio — usa DFSA sobre FS Linux locales |
-| **Tipo** | Local embebido | Distribuido (DFSA redirige E/S al nodo donde está el archivo) |
-| **Parallel FS** | No aplica | ❌ No — DFSA no es paralelo |
-| **Cuellos de botella** | No significativo | ⚠️ Posibles con alta E/S |
-| **Wear leveling** | LittleFS y NVS lo implementan | No aplica |
+| Aspecto                | Zephyr OS                                                 | MOSIX                                                         |
+| ---------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| **FS integrado**       | LittleFS (flash), FAT FS (tarjetas SD), NVS (clave-valor) | No tiene FS propio — usa DFSA sobre FS Linux locales          |
+| **Tipo**               | Local embebido                                            | Distribuido (DFSA redirige E/S al nodo donde está el archivo) |
+| **Parallel FS**        | No aplica                                                 | ❌ No — DFSA no es paralelo                                   |
+| **Cuellos de botella** | No significativo                                          | ⚠️ Posibles con alta E/S                                      |
+| **Wear leveling**      | LittleFS y NVS lo implementan                             | No aplica                                                     |
 
 ### 6. Seguridad
 
-| Aspecto | Zephyr OS | MOSIX |
-|---------|-----------|-------|
-| **Seguridad integrada** | Robusta: PSA Crypto, Secure Boot, MPU, User Mode | Sandbox para procesos guest |
-| **Certificaciones** | OpenSSF Gold Badge | Ninguna |
-| **Verificación criptográfica** | ✅ PSA Crypto API + mbedTLS | ❌ No — depende de confianza en nodos |
-| **Aislamiento** | MPU + User Mode (hardware enforcement) | Sandbox (kernel-level, no virtualización) |
-| **Entornos no confiables** | ✅ Diseñado para funcionar en ambientes adversarial | ❌ Requiere nodos mutuamente confiables |
-| **Actualizaciones de seguridad** | ✅ Regulares | ❌ Ninguna desde 2017 |
-| **Comité de seguridad dedicado** | ✅ Security Subcommittee | ❌ No |
+| Aspecto                          | Zephyr OS                                           | MOSIX                                     |
+| -------------------------------- | --------------------------------------------------- | ----------------------------------------- |
+| **Seguridad integrada**          | Robusta: PSA Crypto, Secure Boot, MPU, User Mode    | Sandbox para procesos guest               |
+| **Certificaciones**              | OpenSSF Gold Badge                                  | Ninguna                                   |
+| **Verificación criptográfica**   | ✅ PSA Crypto API + mbedTLS                         | ❌ No — depende de confianza en nodos     |
+| **Aislamiento**                  | MPU + User Mode (hardware enforcement)              | Sandbox (kernel-level, no virtualización) |
+| **Entornos no confiables**       | ✅ Diseñado para funcionar en ambientes adversarial | ❌ Requiere nodos mutuamente confiables   |
+| **Actualizaciones de seguridad** | ✅ Regulares                                        | ❌ Ninguna desde 2017                     |
+| **Comité de seguridad dedicado** | ✅ Security Subcommittee                            | ❌ No                                     |
 
 ### 7. Facilidades para Desarrolladores
 
-| Aspecto | Zephyr OS | MOSIX |
-|---------|-----------|-------|
-| **SDK completo** | ✅ Zephyr SDK (toolchains, QEMU, OpenOCD) | ❌ No hay SDK oficial |
-| **Build system** | CMake + Kconfig + Devicetree + West | Scripts de instalación (`mosconf`) |
-| **Documentación** | Exhaustiva (docs.zephyrproject.org) | Limitada, dispersa, desactualizada |
-| **Boards/Plataformas soportadas** | >1,000 boards, >15 arquitecturas | x86/x86_64 (Linux) |
-| **Modificación de aplicaciones** | Requiere recompilación | ✅ No requiere recompilación ni linking especial |
-| **API** | POSIX-like parcial, APIs nativas Zephyr | Solo herramientas CLI (`mosrun`, `mosmon`, etc.) |
-| **Comunidad activa** | ✅ Discord, GitHub Discussions, mailing lists | ❌ Prácticamente inexistente |
+| Aspecto                           | Zephyr OS                                     | MOSIX                                            |
+| --------------------------------- | --------------------------------------------- | ------------------------------------------------ |
+| **SDK completo**                  | ✅ Zephyr SDK (toolchains, QEMU, OpenOCD)     | ❌ No hay SDK oficial                            |
+| **Build system**                  | CMake + Kconfig + Devicetree + West           | Scripts de instalación (`mosconf`)               |
+| **Documentación**                 | Exhaustiva (docs.zephyrproject.org)           | Limitada, dispersa, desactualizada               |
+| **Boards/Plataformas soportadas** | >1,000 boards, >15 arquitecturas              | x86/x86_64 (Linux)                               |
+| **Modificación de aplicaciones**  | Requiere recompilación                        | ✅ No requiere recompilación ni linking especial |
+| **API**                           | POSIX-like parcial, APIs nativas Zephyr       | Solo herramientas CLI (`mosrun`, `mosmon`, etc.) |
+| **Comunidad activa**              | ✅ Discord, GitHub Discussions, mailing lists | ❌ Prácticamente inexistente                     |
 
 ### 8. Estado Actual y Adopción
 
-| Aspecto | Zephyr OS | MOSIX |
-|---------|-----------|-------|
-| **Último release** | LTS3 activo (2026) | MOSIX-4.4.4 (octubre 2017) |
-| **Desarrollo activo** | ✅ Sí — miles de commits | ❌ No |
-| **Adopción comercial** | 70% NA, 62% Europa | ❌ Cero casos modernos documentados |
-| **Top500 HPC** | No aplica | ❌ 0% |
-| **Membresía corporativa** | ✅ Linux Foundation (múltiples tiers) | ❌ No disponible |
-| **Soporte comercial** | ✅ Múltiples vendors (Nordic, Intel, NXP, Renesas, Wind River) | ❌ No hay |
-| **Productos comerciales** | Vestas, Google Chromebook, Oticon More, Framework Laptop, etc. | Solo histórico académico |
+| Aspecto                   | Zephyr OS                                                      | MOSIX                               |
+| ------------------------- | -------------------------------------------------------------- | ----------------------------------- |
+| **Último release**        | LTS3 activo (2026)                                             | MOSIX-4.4.4 (octubre 2017)          |
+| **Desarrollo activo**     | ✅ Sí — miles de commits                                       | ❌ No                               |
+| **Adopción comercial**    | 70% NA, 62% Europa                                             | ❌ Cero casos modernos documentados |
+| **Top500 HPC**            | No aplica                                                      | ❌ 0%                               |
+| **Membresía corporativa** | ✅ Linux Foundation (múltiples tiers)                          | ❌ No disponible                    |
+| **Soporte comercial**     | ✅ Múltiples vendors (Nordic, Intel, NXP, Renesas, Wind River) | ❌ No hay                           |
+| **Productos comerciales** | Vestas, Google Chromebook, Oticon More, Framework Laptop, etc. | Solo histórico académico            |
 
 ### 9. Costos
 
-| Aspecto | Zephyr OS | MOSIX |
-|---------|-----------|-------|
-| **Licencia** | Gratis (Apache 2.0) | Propietaria (precio histórico: $61K) |
-| **Regalías** | $0 | ❌ Información no disponible |
-| **Uso comercial** | ✅ Libre | ⚠️ Restringido |
-| **Soporte comercial** | Disponible (Wind River Rocket, vendors) | ❌ No disponible |
+| Aspecto               | Zephyr OS                               | MOSIX                                |
+| --------------------- | --------------------------------------- | ------------------------------------ |
+| **Licencia**          | Gratis (Apache 2.0)                     | Propietaria (precio histórico: $61K) |
+| **Regalías**          | $0                                      | ❌ Información no disponible         |
+| **Uso comercial**     | ✅ Libre                                | ⚠️ Restringido                       |
+| **Soporte comercial** | Disponible (Wind River Rocket, vendors) | ❌ No disponible                     |
 
 ---
 
@@ -134,25 +134,25 @@ Son productos de **categorías completamente diferentes**. Zephyr compite con Fr
 
 ### Zephyr vs Sus Competidores RTOS
 
-| Característica | Zephyr | FreeRTOS | ThreadX | NuttX |
-|----------------|--------|----------|---------|-------|
-| **Licencia** | Apache 2.0 | MIT | MIT | Apache 2.0 |
-| **Sponsor** | Linux Foundation | Amazon (AWS) | Microsoft/Eclipse | Apache |
-| **Conectividad wireless** | BLE, Wi-Fi, Thread, 802.15.4, LoRa, Cellular, CAN | Solo BLE | NetX Duo (TCP/IP) | Ethernet, WiFi, 6LoWPAN |
-| **Seguridad** | PSA Crypto, Secure Boot, MPU, OpenSSF Gold | Básica | Certificaciones pre-existentes | Básica |
-| **Boards soportadas** | >1,000 | Muchas | Muchas | ~300+ |
-| **Certificaciones** | OpenSSF Gold Badge | No | IEC 61508, ISO 26262, DO-178 | No |
+| Característica            | Zephyr                                            | FreeRTOS     | ThreadX                        | NuttX                   |
+| ------------------------- | ------------------------------------------------- | ------------ | ------------------------------ | ----------------------- |
+| **Licencia**              | Apache 2.0                                        | MIT          | MIT                            | Apache 2.0              |
+| **Sponsor**               | Linux Foundation                                  | Amazon (AWS) | Microsoft/Eclipse              | Apache                  |
+| **Conectividad wireless** | BLE, Wi-Fi, Thread, 802.15.4, LoRa, Cellular, CAN | Solo BLE     | NetX Duo (TCP/IP)              | Ethernet, WiFi, 6LoWPAN |
+| **Seguridad**             | PSA Crypto, Secure Boot, MPU, OpenSSF Gold        | Básica       | Certificaciones pre-existentes | Básica                  |
+| **Boards soportadas**     | >1,000                                            | Muchas       | Muchas                         | ~300+                   |
+| **Certificaciones**       | OpenSSF Gold Badge                                | No           | IEC 61508, ISO 26262, DO-178   | No                      |
 
 ### MOSIX vs Sus Competidores HPC
 
-| Característica | MOSIX | SLURM | Kubernetes | OpenMPI |
-|----------------|-------|-------|------------|---------|
-| **Licencia** | Propietaria | GPL | Apache 2.0 | BSD |
-| **Migración live** | ✅ Sí | ❌ No | ❌ No | ❌ No |
-| **Single System Image** | ✅ Sí | ❌ No | ❌ Parcial | ❌ No |
-| **Estado activo** | ❌ No (desde 2017) | ✅ Sí | ✅ Sí | ✅ Sí |
-| **Adopción Top500** | ❌ 0% | ✅ >60% | ▲ Creciente | ✅ Universal en MPI |
-| **Soporte comercial** | ❌ No | ✅ SchedMD | ✅ Multi-vendor | ❌ No |
+| Característica          | MOSIX              | SLURM      | Kubernetes      | OpenMPI             |
+| ----------------------- | ------------------ | ---------- | --------------- | ------------------- |
+| **Licencia**            | Propietaria        | GPL        | Apache 2.0      | BSD                 |
+| **Migración live**      | ✅ Sí              | ❌ No      | ❌ No           | ❌ No               |
+| **Single System Image** | ✅ Sí              | ❌ No      | ❌ Parcial      | ❌ No               |
+| **Estado activo**       | ❌ No (desde 2017) | ✅ Sí      | ✅ Sí           | ✅ Sí               |
+| **Adopción Top500**     | ❌ 0%              | ✅ >60%    | ▲ Creciente     | ✅ Universal en MPI |
+| **Soporte comercial**   | ❌ No              | ✅ SchedMD | ✅ Multi-vendor | ❌ No               |
 
 ---
 
@@ -187,7 +187,7 @@ Son productos de **categorías completamente diferentes**. Zephyr compite con Fr
 2. [Zephyr Documentation](https://docs.zephyrproject.org/latest/)
 3. [Zephyr Security Overview](https://docs.zephyrproject.org/latest/security/security-overview.html)
 4. [Linux Foundation Research — Zephyr Turns 10 (Mar 2026)](https://www.zephyrproject.org/zephyr-turns-10-as-global-adoption-surges-and-long-term-embedded-use-expands/)
-5. [Wikipedia — Zephyr (operating system)](https://en.wikipedia.org/wiki/Zephyr_(operating_system))
+5. [Wikipedia — Zephyr (operating system)](<https://en.wikipedia.org/wiki/Zephyr_(operating_system)>)
 6. [MOSIX Official Site](http://www.mosix.org/)
 7. [MOSIX History — Hebrew University](https://mosix.cs.huji.ac.il/txt_history.html)
 8. [MOSIX FAQ](http://www.mosix.cs.huji.ac.il/faq/output/faq_toc.html)
@@ -202,11 +202,13 @@ Son productos de **categorías completamente diferentes**. Zephyr compite con Fr
 
 ---
 
-*Documento elaborado para el Trabajo Práctico Especial de Fundamentos de Sistemas Operativos — Mayo 2026*
-*Basado en la investigación existente de las carpetas A, B, C y los 24 archivos allí creados*
+_Documento elaborado para el Trabajo Práctico Especial de Fundamentos de Sistemas Operativos — Mayo 2026_
+_Basado en la investigación existente de las carpetas A, B, C y los 24 archivos allí creados_
 
 ---
+
 ## Nota Académica — Fundamentos de SO
+
 **Conceptos de la materia relacionados:**
 
 - **§1.4 — Arquitecturas de SO (filosofías de diseño)**: La comparativa evidencia dos filosofías arquitectónicas radicalmente distintas. Zephyr implementa un **kernel monolítico unificado** optimizado para sistemas embebidos con recursos restringidos, donde toda la funcionalidad (scheduling, gestión de memoria, drivers, stack de red) se compila en una sola imagen binaria. MOSIX, en cambio, implementa un modelo de **sistema operativo distribuido con Single System Image (SSI)**, donde múltiples kernels Linux se coordinan vía módulo/daemon para presentar un único sistema lógico. Esta comparación ilustra cómo la arquitectura de SO responde al dominio de problema: microcontroladores single-core vs clusters de cientos de nodos.
