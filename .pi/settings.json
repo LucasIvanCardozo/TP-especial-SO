@@ -9,6 +9,26 @@
 				"model": "minimax/MiniMax-M2.7-highspeed",
 				"thinking": "xhigh"
 			},
+			"sdd-explore": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-proposal": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-spec": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-design": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-tasks": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
 			"sdd-apply": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
 				"thinking": "xhigh"
@@ -50,6 +70,10 @@
 				"thinking": "xhigh"
 			},
 			"scout": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-init": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
 				"thinking": "xhigh"
 			}
