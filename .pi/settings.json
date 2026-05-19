@@ -1,81 +1,57 @@
 {
 	"subagents": {
 		"agentOverrides": {
-			"sdd-init": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-explore": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-proposal": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-spec": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-design": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-tasks": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-apply": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-verify": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-sync": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"sdd-archive": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"context-builder": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"delegate": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"oracle": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"planner": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"researcher": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"reviewer": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
-			"scout": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
-			},
 			"sdd-onboard": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
+				"thinking": "xhigh"
 			},
 			"worker": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "high"
+				"thinking": "xhigh"
+			},
+			"sdd-apply": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-verify": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-sync": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-archive": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"context-builder": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"delegate": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"oracle": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"planner": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"researcher": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"reviewer": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"scout": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
 			}
 		}
 	}
