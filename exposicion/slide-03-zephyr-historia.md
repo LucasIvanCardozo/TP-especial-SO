@@ -47,7 +47,7 @@ Mencionar los founding members: "Las empresas que iniciaron todo esto fueron Int
 |-------|--------|-----------------|
 | **Finales '90** | Eonic Systems crea Virtuoso RTOS | Origen real del código, 15+ años de desarrollo comercial previo |
 | **2001** | Wind River adquiere Eonic Systems | Conexión con VxWorks, gigante del mercado RTOS |
-| **2009** | Intel compra Wind River por $884M | Consolidación de la industria embedded |
+| ~~2009~~ | ~~Intel compra Wind River por $884M~~ | **Eliminado** — no aparece en la slide |
 | **Nov 2015** | Código abierto como Rocket RTOS (~4 KB) | Nacimiento del código libre |
 | **Feb 2016** | Donación a Linux Foundation → Zephyr | Fundación oficial del proyecto |
 | **2016-2026** | Crecimiento continuo | Madurez comercial comprobada |

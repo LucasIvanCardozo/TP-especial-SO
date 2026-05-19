@@ -1,6 +1,4 @@
-# Slide 05 — MOSIX: La Empresa
-
-> **Nota**: Esta slide en el PPTX es "MOSIX — La Empresa", pero el archivo de explicación `slide-05-explicacion.md` corresponde a Zephyr (coincide con la slide 6 del PPTX). El contenido de esta nota se basa en la investigación general del proyecto MOSIX disponible en el contexto del TP.
+# Slide 05 — MOSIX: Historia y Origen
 
 ---
 

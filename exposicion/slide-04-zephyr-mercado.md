@@ -33,8 +33,8 @@ Los segmentos de mercado que cubre son tres grandes áreas:
 ### Aplicaciones Comerciales Documentadas
 - **Vestibles**: Oticon More (audífono), smartwatches
 - **Industrial**: GARDENA (riego), Vestas (turbinas eólicas)
-- **Médico**: HealthyPi (monitores ECG)
 - **Consumo**: Framework Laptop (componentes embebidos)
+- **Médico**: HealthyPi (monitores ECG) — ver slide 24 para más detalles
 
 ---
 

@@ -12,7 +12,7 @@
 
 ### Punto clave: Footprint de ~4 KB (25 segundos)
 
-"Acá viene lo más impresionante: Zephyr puede funcionar con apenas **4 kilobytes de RAM**. Para que tengan una referencia, una página web promedio ocupa más de 2 megabytes. 4 KB es ridículamente pequeño.
+"Acá viene lo más impresionante: Zephyr puede funcionar con apenas **~4 KB de footprint mínimo** (kernel + aplicación barebones). Para que tengan una referencia, una página web promedio ocupa más de 2 megabytes. 4 KB es ridículamente pequeño.
 
 ¿Cómo es posible? Zephyr no tiene todas las funcionalidades de un sistema operativo de escritorio. No tiene un desktop environment, no tiene gráficos pesados, no tiene un navegador. Tiene lo mínimo indispensable: scheduling de tareas, manejo básico de memoria, y comunicación entre hilos.
 
@@ -119,7 +119,7 @@ Si el profesor pregunta sobre microkernel, no reciten la definición del temario
 
 ### Frases clave para memorizar
 
-- "4 KB de RAM — caben en un microcontrolador de 50 centavos"
+- "~4 KB de footprint mínimo — caben en un microcontrolador de 50 centavos"
 - "Kernel mínimo que prioriza lo esencial sobre lo accesorio"
 - "Híbrido entre microkernel y monolítico — un tradeoff de diseño, no una categoría rígida"
 
