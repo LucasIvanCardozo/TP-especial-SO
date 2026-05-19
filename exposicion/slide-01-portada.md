@@ -6,7 +6,7 @@
 
 "Buenas a todos. Somos el grupo [nombres]. Hoy vamos a presentar nuestro Trabajo Práctico Especial de Evaluación, donde vamos a comparar dos sistemas operativos que no pueden ser más distintos entre sí: **Zephyr OS** y **MOSIX**."
 
-停顿一下，让观众看标题。
+Pausa breve, dejar que el público lea el título.
 
 "Son productos de categorías completamente distintas — los vamos a comparar bajo la misma lupa de Fundamentos de Sistemas Operativos para ver qué decisiones de diseño tomó cada uno, cómo resuelven los mismos problemas fundamentales de un SO, y qué nos dice esto sobre la materia."
 

@@ -131,7 +131,7 @@ Esta slide es de **2017 en adelante** — el proyecto está inactivo. Si pregunt
 
 ## 🎯 Frase de Cierre Sugerida
 
-"Si Zephyr es un gigante que corre en un microcontrolador, MOSIX es un enjambre de hormigas que trabajan juntas pero parecen una sola. Ambos son sistemas operativos, pero operan en escalas y解决的问题 completamente opuestas."
+"Si Zephyr es un gigante que corre en un microcontrolador, MOSIX es un enjambre de hormigas que trabajan juntas pero parecen una sola. Ambos son sistemas operativos, pero operan en escalas y resuelven problemas completamente opuestos."
 
 ---
 

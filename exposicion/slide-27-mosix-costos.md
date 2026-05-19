@@ -69,7 +69,7 @@ NO RECOMENDADO PARA PRODUCCIÓN
 
 1. **Seguridad**: Vulnerabilidades descubiertas desde 2017 nunca fueron parcheadas. Un sistema en producción sería un objetivo fácil.
 
-2. **Compatibilidad**: No hay soporte para hardware nuevo (CPUs, redes, sistemas de almacenamiento). Los clusters HPC modernos usan InfiniBand, y el soporte de MOSIX está冻结ado en 2017.
+2. **Compatibilidad**: No hay soporte para hardware nuevo (CPUs, redes, sistemas de almacenamiento). Los clusters HPC modernos usan InfiniBand, y el soporte de MOSIX está congelado en 2017.
 
 3. **Comunidad**: No hay forum activo, no hay documentación actualizada, no hay nadie respondiendo dudas.
 

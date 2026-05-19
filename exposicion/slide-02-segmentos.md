@@ -2,7 +2,7 @@
 
 ## 🎤 Qué decir
 
-Empezá señalando el gráfico: "Este diagrama es la clave de toda la presentación. Zephyr y MOSIX parecen no tener nada en común, y técnicamente no compiten en el mismo mercado. Pero именно por eso los comparamos: porque nos permiten estudiar cómo las restricciones del hardware determinan las decisiones de diseño de un sistema operativo."
+ Empezá señalando el gráfico: "Este diagrama es la clave de toda la presentación. Zephyr y MOSIX parecen no tener nada en común, y técnicamente no compiten en el mismo mercado. Pero precisamente por eso los comparamos: porque nos permiten estudiar cómo las restricciones del hardware determinan las decisiones de diseño de un sistema operativo."
 
  Señalá los ejes:
 - **Eje vertical (Y)**: recursos de hardware — medimos cuánta RAM, CPU y almacenamiento puede gestionar el sistema

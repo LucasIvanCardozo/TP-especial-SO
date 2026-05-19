@@ -57,7 +57,7 @@ Esta slide sintetiza cómo los conceptos teóricos del temario se manifiestan en
 - **No digas "Zephyr es mejor que MOSIX"** — eso sería como comparar un auto de carrera con un camión de mudanzas. Son productos para problemas completamente diferentes.
 - **Resalta la vigencia de Zephyr** — mencioná al menos 2-3 casos de uso comerciales reales (Oticon More, Vestas, Framework Laptop).
 - **Sé honesto sobre MOSIX** — no lo descartes bruscamente. Decí que fue un proyecto de investigación valioso que anticipation concepts que hoy usan Kubernetes y SLURM.
-- **Conectar con el temario es tu加分** — si un docente pregunta qué aprendimos, la respuesta es: cómo los conceptos teóricos de scheduling, memoria y archivos se traducen en decisiones concretas de diseño.
+- **Conectar con el temario es tu punto extra** — si un docente pregunta qué aprendimos, la respuesta es: cómo los conceptos teóricos de scheduling, memoria y archivos se traducen en decisiones concretas de diseño.
 
 ### Para el momento de preguntas:
 

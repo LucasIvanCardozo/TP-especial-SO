@@ -81,7 +81,7 @@ No privilegiadas: ADD, SUB, MOV (entre registros), PUSH, POP, CALL, RET
 En Zephyr con MPU:
 
 - Las aplicaciones en user mode **no pueden** ejecutar instrucciones privilegiadas
-- Si intentan hacerlo → excepción de特权违规 (privilege violation)
+- Si intentan hacerlo → excepción de violación de privilegio (privilege violation)
 - El kernel maneja la excepción y puede terminar el proceso
 
 ### §1.7 — Interrupciones y Excepciones

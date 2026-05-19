@@ -18,7 +18,7 @@
 
 **API POSIX-like:**
 
-> "Zephyr provee una API estilo POSIX para las operaciones más comunes: gestión de archivos, threads, sockets. Esto facilita la迁移 de código desde Linux. No es POSIX compliant al 100%, pero la mayoría de las funciones como `open()`, `read()`, `write()`, `pthread_create()` están disponibles."
+> "Zephyr provee una API estilo POSIX para las operaciones más comunes: gestión de archivos, threads, sockets. Esto facilita la portación de código desde Linux. No es POSIX compliant al 100%, pero la mayoría de las funciones como `open()`, `read()`, `write()`, `pthread_create()` están disponibles."
 
 ---
 

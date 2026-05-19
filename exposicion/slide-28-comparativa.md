@@ -48,7 +48,7 @@ Según §2.1, el scheduler debe maximizar utilización de CPU y throughput. MOSI
 
 ### Seguridad (25 segundos)
 
-"最后, seguridad:
+"En seguridad:
 
 - **Zephyr** implementa **MPU + modo dual** con todas las protecciones que vimos en §1.5 y §1.6: modo kernel vs modo usuario, instrucciones privilegiadas, interrupciones. Además incluye PSA Crypto API, Secure Boot, y Security Subcommittee activo.
 

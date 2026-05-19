@@ -21,7 +21,7 @@
 - **LTS activo** — Zephyr ofrece soporte a largo plazo para productos de ciclo de vida largo, algo crítico en IoT industrial y médico
 - **69% planea aumentar uso** — la adopción no solo es presente, es creciente"
 
-### Conexión con el吹 Pitch
+### Conexión con el Pitch
 
 "Esto contrasta totalmente con lo que vimos de MOSIX. Mientras MOSIX tiene cero actividad desde 2017, Zephyr está en plena expansión. Y estos números no son marketing — son datos de la Linux Foundation Research de 2026."
 
@@ -36,7 +36,7 @@
 | Métrica                      | Qué significa                    | Por qué importa                         |
 | ---------------------------- | -------------------------------- | --------------------------------------- |
 | **3,000+ contributors**      | Comunidad global activa          | No depende de una sola empresa          |
-| **1,000+ boards**            | Soporte masivo de hardware       | Ahorra移植 work a fabricantes           |
+| **1,000+ boards**            | Soporte masivo de hardware       | Ahorra trabajo de portación a fabricantes           |
 | **LTS activo**               | Versiones con 2+ años de soporte | Confianza para productos de ciclo largo |
 | **69% crecimiento planeado** | Trajectory positiva              | Indica relevancia continua              |
 

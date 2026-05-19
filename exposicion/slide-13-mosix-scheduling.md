@@ -73,7 +73,7 @@ MOSIX añade un **scheduler distribuido** que opera a nivel de cluster, por enci
 | -------------------------- | ------------------------------------------ | --------------------------------------------- |
 | **Ámbito del scheduling**  | Local — un solo MCU                        | Distribuido — cluster entero                  |
 | **Decisión de scheduling** | Prioridad estática, cooperativo/preemptive | Balanceo de carga dinámico                    |
-| **Migración**              | No existe — un thread corre en un solo核   | Sí — proceso completo migra entre nodos       |
+| **Migración**              | No existe — un thread corre en un solo núcleo   | Sí — proceso completo migra entre nodos       |
 | **Overhead**               | Mínimo — context switch local              | Alto — transferencia de PCB + memoria por red |
 | **Latencia**               | Microsegundos                              | Milisegundos (depende de la red)              |
 
