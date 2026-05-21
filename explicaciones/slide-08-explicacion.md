@@ -2,17 +2,17 @@
 
 ## Introducción
 
-Esta slide presenta el **Sistema de Archivos de MOSIX**, focalizándose en el mecanismo **DFSA (Distributed File System Adapter)** que permite el acceso transparente a archivos en un cluster MOSIX. La slide muestra tres componentes principales: el flujo de interceptación DFSA (lado izquierdo), los sistemas de archivos locales soportados por cada nodo (lado derecho superior), y las limitaciones del enfoque adoptado por MOSIX (lado derecho inferior).
+Esta slide presenta el **Sistema de Archivos de MOSIX**, focalizándose en el mecanismo **DFSA (Direct File System Access)** que permite el acceso transparente a archivos en un cluster MOSIX. La slide muestra tres componentes principales: el flujo de interceptación DFSA (lado izquierdo), los sistemas de archivos locales soportados por cada nodo (lado derecho superior), y las limitaciones del enfoque adoptado por MOSIX (lado derecho inferior).
 
 El diseño de MOSIX respecto al almacenamiento es deliberadamente pragmático: en lugar de crear un sistema de archivos distribuido propio, implementa una capa de interposición sobre syscalls que redirige las operaciones de E/S hacia el nodo donde residen físicamente los datos. Este enfoque tiene ventajas e inconvenientes que se analizan en detalle a continuación.
 
 ---
 
-## 1. DFSA — Distributed File System Adapter
+## 1. DFSA — Direct File System Access
 
 ### 1.1 Definición y Propósito
 
-**DFSA (Distributed File System Adapter)** es el mecanismo mediante el cual MOSIX permite que un proceso migrado realice operaciones sobre archivos **directamente en el nodo actual de ejecución**, sin necesidad de retornar al nodo donde se inició el proceso para cada operación de E/S. El término "Adapter" en su nombre indica que actúa como un puente entre las syscalls de archivo generadas por las aplicaciones y los sistemas de archivos locales existentes en cada nodo del cluster.
+**DFSA (Direct File System Access)** es el mecanismo mediante el cual MOSIX permite que un proceso migrado realice operaciones sobre archivos **directamente en el nodo actual de ejecución**, sin necesidad de retornar al nodo donde se inició el proceso para cada operación de E/S. El término "Adapter" en su nombre indica que actúa como un puente entre las syscalls de archivo generadas por las aplicaciones y los sistemas de archivos locales existentes en cada nodo del cluster.
 
 El propósito fundamental de DFSA es proporcionar **transparencia de ubicación**: las aplicaciones perciben las operaciones de archivo como si fueran locales, independientemente de dónde esté almacenado el archivo físico en el cluster. Esta transparencia es crítica para que la migración de procesos funcione correctamente — un proceso migrado puede abrir, leer, escribir y cerrar archivos sin conocer la topología de almacenamiento del cluster.
 
@@ -190,10 +190,10 @@ Esta limitación refuerza que MOSIX no proporciona un sistema de archivos verdad
 
 ## 4. Glosario de Términos
 
-### DFSA — Distributed File System Adapter
+### DFSA — Direct File System Access
 **Definición**: Capa de interposición de MOSIX que intercepta syscalls de archivo y redirige las operaciones al nodo del cluster donde reside físicamente el archivo. Proporciona transparencia de ubicación sin modificar los sistemas de archivos subyacentes.
 
-**Sigla de**: Distributed File System Adapter
+**Sigla de**: Direct File System Access
 
 **Contexto en la slide**: DFSA es el centro del diagrama de interception flow, representando el componente que intercepta syscalls de archivos y redirige según la ubicación del archivo.
 

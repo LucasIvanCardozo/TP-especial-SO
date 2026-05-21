@@ -16,7 +16,7 @@
 
 ### Cómo funciona la interceptación
 
-"DFSA — Distributed File System Adapter — intercepta cada syscall de archivo antes de que llegue al sistema de archivos local. Si el archivo está en otro nodo, DFSA redirige la operación por red. Todo esto es transparente para la aplicación: el proceso cree que está leyendo de manera local, pero en realidad los datos cruzan la red."
+"DFSA — Direct File System Access — intercepta cada syscall de archivo antes de que llegue al sistema de archivos local. Si el archivo está en otro nodo, DFSA redirige la operación por red. Todo esto es transparente para la aplicación: el proceso cree que está leyendo de manera local, pero en realidad los datos cruzan la red."
 
 ### Los FS subyacentes
 

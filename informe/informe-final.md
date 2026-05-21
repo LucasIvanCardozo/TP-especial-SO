@@ -89,7 +89,7 @@ Este informe compara **Zephyr OS** (RTOS para IoT embebido, ~16 KB RAM mínimo, 
 
 | Aspecto | Zephyr OS | MOSIX |
 |---------|-----------|-------|
-| **Arquitectura** | VFS (capa de abstracción central) | DFSA (Distributed File System Adapter) |
+| **Arquitectura** | VFS (capa de abstracción central) | DFSA (Direct File System Access) |
 | **FS propios** | LittleFS, FAT FS, NVS | No posee — delega a FS locales |
 | **FS subyacentes** | Flash interna, SD card, USB | ext3, ext4, XFS, NFS, ext2 |
 | **Permisos UNIX** | No | POSIX completo |

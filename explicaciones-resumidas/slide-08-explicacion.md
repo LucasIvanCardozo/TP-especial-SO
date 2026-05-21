@@ -2,7 +2,7 @@
 
 ## Overview
 
-MOSIX no tiene su propio sistema de archivos distribuido. En cambio, usa **DFSA** (Distributed File System Adapter) para interceptar operaciones de archivos y redirigirlas al nodo donde el archivo reside físicamente.
+MOSIX no tiene su propio sistema de archivos distribuido. En cambio, usa **DFSA** (Direct File System Access) para interceptar operaciones de archivos y redirigirlas al nodo donde el archivo reside físicamente.
 
 ---
 
