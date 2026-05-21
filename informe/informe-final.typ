@@ -243,7 +243,7 @@ El objetivo es presentar un análisis técnico objetivo que permita comprender l
   text(font: font-sans, size: 10pt, fill: white, weight: "bold")[Aspecto],
   text(font: font-sans, size: 10pt, fill: white, weight: "bold")[Zephyr OS],
   text(font: font-sans, size: 10pt, fill: white, weight: "bold")[MOSIX],
-  [Arquitectura], [VFS (capa de abstracción central)], [DFSA (Distributed File System Adapter)],
+  [Arquitectura], [VFS (capa de abstracción central)], [DFSA (Direct File System Access)],
   [FS propios], [LittleFS, FAT FS, NVS], [No posee — delega a FS locales],
   [FS subyacentes], [Flash interna, SD card, USB], [ext3, ext4, XFS, NFS, ext2],
   [Permisos UNIX], [No], [POSIX completo],
