@@ -1,11 +1,39 @@
 {
 	"subagents": {
 		"agentOverrides": {
+			"delegate": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"oracle": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"planner": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"researcher": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"reviewer": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"scout": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
 			"sdd-onboard": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
 				"thinking": "xhigh"
 			},
 			"worker": {
+				"model": "minimax/MiniMax-M2.7-highspeed",
+				"thinking": "xhigh"
+			},
+			"sdd-init": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
 				"thinking": "xhigh"
 			},
@@ -46,34 +74,6 @@
 				"thinking": "xhigh"
 			},
 			"context-builder": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
-			},
-			"delegate": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
-			},
-			"oracle": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
-			},
-			"planner": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
-			},
-			"researcher": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
-			},
-			"reviewer": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
-			},
-			"scout": {
-				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
-			},
-			"sdd-init": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
 				"thinking": "xhigh"
 			}
