@@ -3,79 +3,79 @@
 		"agentOverrides": {
 			"delegate": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"oracle": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"planner": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"researcher": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"reviewer": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"scout": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-onboard": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"worker": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-init": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-explore": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-proposal": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-spec": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-design": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-tasks": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-apply": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-verify": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-sync": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"sdd-archive": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			},
 			"context-builder": {
 				"model": "minimax/MiniMax-M2.7-highspeed",
-				"thinking": "xhigh"
+				"thinking": "high"
 			}
 		}
 	}
